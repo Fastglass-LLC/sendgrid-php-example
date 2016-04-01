@@ -17,4 +17,4 @@ Copy the example config file to a live config file.
 Edit the new file `config.php` and change the variables `$sendgrid_api_key`
 and `$to` to your settings.
 
-Execut the PHP script either via a web server or using PHP CLI.
+Execute the PHP script either via a web server or using PHP CLI.
