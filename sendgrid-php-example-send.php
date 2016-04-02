@@ -3,7 +3,8 @@ require 'vendor/autoload.php';
 
 require_once 'config.php';
 
-$sendgrid = new SendGrid($sendgrid_api_key, ["turn_off_ssl_verification" => TRUE]);
+
+$sendgrid = new SendGrid\Client($sendgrid_api_key, ["turn_off_ssl_verification" => TRUE]);
 $email = new SendGrid\Email();
 $email->addTo($to)
   ->setFrom($to)
